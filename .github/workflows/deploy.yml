@@ -15,7 +15,8 @@ jobs:
 #      image: node:16
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb
-      MONGODB_CLUSTER_ADDRESS: 127.0.0.1:27017 #name of the service helps us to establish network connection and this only works if the job runs only in the container
+      MONGODB_CLUSTER_ADDRESS: 127.0.0.1:27017 
+      #MONGODB_CLUSTER_ADDRESS: mongodb # name of the service helps us to establish network connection and this only works if the job runs only in the container
       MONGODB_USERNAME: root
       MONGODB_PASSWORD: example
       PORT: 8080
